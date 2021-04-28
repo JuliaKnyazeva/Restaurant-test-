@@ -1,22 +1,6 @@
-public final class Drink {
+public class Drink extends BaseDish{
 
-    private final String drinkName;
-    private final double drinkPrice;
-
-    Drink(String name, double price) {
-        this.drinkName = name;
-        this.drinkPrice = price;
+    public Drink(String name, double price) {
+        super(name, price);
     }
-
-    public String getDrinkName() {
-        return drinkName;
-    }
-
-
-
-    public double getDrinkPrice() {
-        return drinkPrice;
-    }
-
-
 }
